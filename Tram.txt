@@ -1,0 +1,24 @@
+import java.util.Scanner;
+public class Tram
+{
+    public static void main(String args[]){
+    Scanner sc = new Scanner(System.in);
+    int lines = sc.nextInt();
+    int bus=0;
+    int max=0;
+    for(int i=0;i<lines;i++){
+    int out = sc.nextInt();
+    int in = sc.nextInt();
+    bus = bus+in;
+    bus = bus-out;
+    
+    if(bus>max){
+    max=bus;
+    
+    }
+    
+    }
+    System.out.print(max);
+    
+}
+    }
